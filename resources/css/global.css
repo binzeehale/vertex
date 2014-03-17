@@ -1,0 +1,295 @@
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: "Microsoft YaHei";
+}
+
+button {
+  font-family: "Microsoft YaHei";
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.docs-sidenav {
+  width: 228px;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+  box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+
+/* Sidenav for Docs
+-------------------------------------------------- */
+
+.bs-docs-sidenav {
+  width: 130px;
+  margin: 30px 0 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
+          box-shadow: 0 1px 4px rgba(0,0,0,.065);
+}
+.bs-docs-sidenav > li > a {
+  display: block;
+  width: 190px \9;
+  margin: 0 0 -1px;
+  padding: 8px 14px;
+  border: 1px solid #e5e5e5;
+}
+.bs-docs-sidenav > li:first-child > a {
+  -webkit-border-radius: 6px 6px 0 0;
+     -moz-border-radius: 6px 6px 0 0;
+          border-radius: 6px 6px 0 0;
+}
+.bs-docs-sidenav > li:last-child > a {
+  -webkit-border-radius: 0 0 6px 6px;
+     -moz-border-radius: 0 0 6px 6px;
+          border-radius: 0 0 6px 6px;
+}
+.bs-docs-sidenav > .active > a {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px;
+  border: 0;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+  -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+     -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+          box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+}
+/* Chevrons */
+.bs-docs-sidenav .icon-chevron-right {
+  float: right;
+  margin-top: 2px;
+  margin-right: -6px;
+  opacity: .25;
+}
+.bs-docs-sidenav > li > a:hover {
+  background-color: #f5f5f5;
+}
+.bs-docs-sidenav a:hover .icon-chevron-right {
+  opacity: .5;
+}
+.bs-docs-sidenav .active .icon-chevron-right,
+.bs-docs-sidenav .active a:hover .icon-chevron-right {
+  background-image: url(../img/glyphicons-halflings-white.png);
+  opacity: 1;
+}
+.bs-docs-sidenav.affix {
+  top: 30px;
+}
+.bs-docs-sidenav.affix-bottom {
+  position: absolute;
+  top: auto;
+  bottom: 270px;
+}
+
+
+.start-datetime , .end-datetime {
+  margin-left: 20px !important;
+}
+
+
+.margin-bottom20{
+  margin-bottom: 20px;
+}
+
+.help-error {
+  color: red;
+  display: none;
+}
+
+@media (max-width: 980px) {
+  /* Enable use of floated navbar text */
+  .navbar-text.pull-right {
+    float: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.block {
+  margin-top: 40px;
+}
+
+.font-fix {
+  font-family: "Microsoft YaHei";
+}
+
+.alert-box {
+  position: absolute;
+  top: 0px;
+  left:45%;
+  z-index: 2048;
+  display: none;
+}
+
+.classroom{
+  margin-bottom: 20px;
+}
+.classroom .add-class , .classroom .add-student , .student .add-student{
+  font-family:  "Microsoft YaHei";
+  line-height: 20px;
+}
+
+.classroom .add-student{
+  margin-bottom: 20px;
+}
+
+.classroom .search-btn {
+  font-family:  "Microsoft YaHei";
+}
+
+.classroom .single-left, .classroom .single-index {
+
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.single-left {
+  padding: 0 10px 5px 10px;
+}
+
+.classroom .single-left p{
+  margin: 10px 0px 10px 5px;
+}
+
+.classroom .single-left .detail {
+
+  margin: 5px;
+  padding: 5px;
+  background-color: #bbd8e9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.classroom .single-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.classroom #selected-student span{
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.classroom #modalContext .controls {
+  margin-left: 80px;
+}
+
+.student .output-btn {
+  margin: 20px;
+  font-family:  "Microsoft YaHei";
+}
+
+.student .arrears{
+  
+  font-family:  "Microsoft YaHei";
+  line-height: 20px;
+}
+
+.student .single-left, .student .single-index {
+
+  margin-bottom: 20px;
+  background-color: #EAF1FA;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.student .single-left .lead{
+  margin: 10px 0;
+}
+
+.student .personal {
+    
+}
+
+.student .personal .info-box{
+  min-height: 83px;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.student .account .money{
+  font-size: 34px;
+  font-weight: 400;
+  font-family: Arial;
+  color: #4c4c4c;
+  line-height: 40px;
+}
+
+.student .account .pay {
+  margin-bottom: 15px;
+}
+
+.history {
+  margin-bottom: 10px;
+}
+
+.history .income {
+  margin-right: 20px;
+}
+
+.history .income strong ,.history .expenses strong{
+  color: gray;
+}
+
+.history .income span{
+  font-size: 16px;
+  color: #53a000;
+}
+
+.history .expenses span{
+  font-size: 16px;
+  color: #AA0909;
+}
+
+.student #studentOpera {
+  margin-bottom:  20px;
+}
+
+.attendance .controls span{
+
+    line-height: 2em;
+}
+
+.attendance .attend-radio {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.finance .top-btn{
+  margin-bottom: 20px;
+}
+
+.teacher #teacherOpera {
+
+  margin-bottom: 20px;
+}
