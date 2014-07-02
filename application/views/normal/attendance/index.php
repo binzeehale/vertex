@@ -155,7 +155,10 @@
 	                }
 	              ]
 	    },
-		"aaSorting": [[ 1, "desc" ]]
+		"aaSorting": [[ 1, "desc" ]],
+		"bProcessing": true,
+        "bServerSide": true,
+        "sAjaxSource": "/vertex/attendance/ajaxGetAttendancesForIndex"
 	} );
 
 	$('#addAttendance').click(function(){

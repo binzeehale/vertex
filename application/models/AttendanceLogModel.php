@@ -14,6 +14,32 @@ class AttendanceLogModel extends CI_Model {
         return $query->result_array();
     }
 
+    public function getAllCount(){
+        return $this->db->count_all_results($this->_table);
+    }
+
+    public function getAttendanceByDataTable($sSearch,$iSortCol,$sSortDir){
+
+        $keyList = array('sign_date','sign_date','class_name',
+                            'student_name','teacher_name',
+                            'student_cost','user_name','aviliable','teacher_earnings');
+        if($sSearch){
+            foreach($keyList as $index=>$k){
+                if($index == 0){
+                    $this->db->like($k,$sSearch);
+                }else{
+                    $this->db->or_like($k,$sSearch);
+                }
+            } 
+        }
+        $this->db->order_by($keyList[$iSortCol], $sSortDir); 
+        $query =$this->db->get($this->_table);
+
+        // print $this->db->last_query();
+        // exit();
+        return $query->result_array();
+    }
+
     public function getAttendanceById($id){
         $sql = 'select * from ' . $this->_table . ' where id=?';
         $query = $this->db->query($sql , array($id));
